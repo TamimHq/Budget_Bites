@@ -1,3 +1,5 @@
+import 'package:budget_bites_store_interface/all_pages/sign_in/sign_in_screen.dart';
+import 'package:budget_bites_store_interface/all_pages/sign_up/sign_up_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_svg_provider/flutter_svg_provider.dart' as fs;
@@ -69,7 +71,12 @@ class SignUpButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SignUpScreen()),
+                );
+              },
               child: Container(
     margin: EdgeInsets.only(
       left: 20,
@@ -125,7 +132,12 @@ class SIgnInButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => SignInScreen()),
+        );
+      },
       child: Container(
         margin: EdgeInsets.only(
           left: 20,

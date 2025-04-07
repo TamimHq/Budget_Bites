@@ -1,15 +1,10 @@
 import 'package:budget_bites_store_interface/core/app_export.dart';
-import 'package:get/get_state_manager/src/simple/get_view.dart';
 
 import '../../widgets/app_bar/appbar_leading_image.dart';
 import '../../widgets/app_bar/appbar_subtitle_five.dart';
 import '../../widgets/app_bar/custom_app_bar.dart';
 import '../../widgets/custom_elevated_button.dart';
-import '../core/utils/image_constant.dart';
-import '../core/utils/size_utils.dart';
-import '../theme/custom_text_style.dart';
-import '../theme/theme_helper.dart';
-import '../widgets/custom_image_view.dart';
+
 import 'controller/profile_controller.dart';
 import 'package:flutter/material.dart';
 
@@ -38,7 +33,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                 child: Row(
                   children: [
                     CustomImageView(
-                      imagePath: "asset/images/avatar.jpg",
+                      imagePath: "asset/images/food.png",
                       height: 50.adaptSize,
                       width: 50.adaptSize,
                       radius: BorderRadius.circular(
@@ -194,9 +189,9 @@ class ProfileScreen extends GetWidget<ProfileController> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CustomImageView(
-              imagePath: ImageConstant.imgLockGray700,
-              height: 24.adaptSize,
-              width: 24.adaptSize,
+              imagePath: "asset/images/img_lock_gray_700.svg",
+              height: 20.v,
+              width: 20.h,
               margin: EdgeInsets.only(top: 3.v),
             ),
             Padding(
@@ -210,7 +205,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                 style: theme.textTheme.bodyMedium,
               ),
             ),
-            Spacer(),
+            const Spacer(),
             CustomElevatedButton(
               height: 29.v,
               width: 80.h,
@@ -235,13 +230,13 @@ class ProfileScreen extends GetWidget<ProfileController> {
             "Your Locations".tr,
             style: CustomTextStyles.titleSmallBold,
           ),
-          SizedBox(height: 15.v),
+          SizedBox(height: 10.v),
           Padding(
-            padding: EdgeInsets.only(right: 24.h),
+            padding: EdgeInsets.only(right: 20.h),
             child: Row(
               children: [
                 CustomImageView(
-                  imagePath: ImageConstant.imgHome,
+                  imagePath: 'asset/images/img_home.svg',
                   height: 24.adaptSize,
                   width: 24.adaptSize,
                   margin: EdgeInsets.only(top: 3.v),
@@ -249,7 +244,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                 Padding(
                   padding: EdgeInsets.only(
                     left: 20.h,
-                    top: 7.v,
+
                     bottom: 3.v,
                   ),
                   child: Text(
@@ -257,14 +252,13 @@ class ProfileScreen extends GetWidget<ProfileController> {
                     style: theme.textTheme.bodyMedium,
                   ),
                 ),
-                Spacer(),
-                CustomElevatedButton(
-                  height: 29.v,
-                  width: 60.h,
-                  text: "add".tr,
-                  buttonStyle: CustomButtonStyles.fillPrimary,
-                  buttonTextStyle: CustomTextStyles.titleSmallOnPrimarySemiBold,
-                ),
+                const Spacer(),
+            CustomElevatedButton(
+              height: 29.v,
+              width: 80.h,
+              text: "Add",
+              buttonStyle: CustomButtonStyles.fillPrimary,
+              buttonTextStyle: CustomTextStyles.titleSmallOnPrimarySemiBold,),
               ],
             ),
           ),
@@ -279,7 +273,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
             child: Row(
               children: [
                 CustomImageView(
-                  imagePath: ImageConstant.imgBriefcase,
+                  imagePath: "asset/images/img_briefcase.svg",
                   height: 24.adaptSize,
                   width: 24.adaptSize,
                   margin: EdgeInsets.only(top: 3.v),
@@ -295,14 +289,13 @@ class ProfileScreen extends GetWidget<ProfileController> {
                     style: theme.textTheme.bodyMedium,
                   ),
                 ),
-                Spacer(),
+                const Spacer(),
                 CustomElevatedButton(
                   height: 29.v,
-                  width: 60.h,
-                  text: "add".tr,
+                  width: 80.h,
+                  text: "Add",
                   buttonStyle: CustomButtonStyles.fillPrimary,
-                  buttonTextStyle: CustomTextStyles.titleSmallOnPrimarySemiBold,
-                ),
+                  buttonTextStyle: CustomTextStyles.titleSmallOnPrimarySemiBold,),
               ],
             ),
           ),

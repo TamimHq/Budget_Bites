@@ -1,8 +1,9 @@
 import 'package:budget_bites_store_interface/core/app_export.dart';
-import 'package:budget_bites_store_interface/profile_screen/profile_screen.dart';
 import 'package:budget_bites_store_interface/widgets/app_bar/appbar_leading_image.dart';
 import 'package:budget_bites_store_interface/widgets/app_bar/appbar_title.dart';
 import 'package:flutter/material.dart';
+
+import '../profile_screen/profile_screen.dart';
 
 class AppBarDashBoard extends StatelessWidget{
   const AppBarDashBoard({super.key});

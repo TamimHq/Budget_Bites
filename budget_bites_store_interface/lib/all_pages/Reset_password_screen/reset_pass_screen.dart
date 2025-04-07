@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 
-class reset_pass extends StatelessWidget {
-  const reset_pass({super.key});
+class Reset_Pass extends StatelessWidget {
+  const Reset_Pass({super.key});
 
   @override
   Widget build(BuildContext context) {
